@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --pry-color: #ffffff;
+  --pry-color: #000000;
+  --pry-color: #228b22;
+  --pry-color: #e6c200;
+  --pry-color: #87ceeb;
+  --pry-color: #a9a9a9;
+
+  /* Font Family */
+  --d-script: "Dancing Script";
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,10 +20,85 @@
   box-sizing: border-box;
 }
 
+
+html {
+  font-size: 100%;
+}
+
 /* ================== GENERAL STYLES ================== */
 
 .container {
   padding: 10px 5%;
   margin: auto;
   min-height: 100vh;
+}
+
+/* ================= Font Family ================= */
+
+
+/* font-family: "Montserrat", "Roboto", "Dancing Script",serif; */
+
+h1 {
+  font-family: "Montserrat", serif;
+}
+
+h2,
+h3,
+h4,
+p {
+  font-family: "Roboto", serif;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.9rem;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.55rem;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+
+/* ================= Responsiveness ================= */
+/* ======== Laptop ======== */
+@media screen and (max-width: 1024px) {
+  html {
+    /* font-size: 50%; */
+  }
+}
+
+/* ======== Tablet ======== */
+@media screen and (max-width: 768px) {
+  html {
+    /* font-size: 40%; */
+  }
+}
+
+/* ======== Mobile ======== */
+@media screen and (max-width: 425px) {
+  html {
+    /* font-size: 35%; */
+  }
+}
+
+/* ======== Mobile ======== */
+@media screen and (max-width: 320px) {
+  html {
+    /* font-size: 30%; */
+  }
 }
