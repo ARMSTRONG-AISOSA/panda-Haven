@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/github.io/panda-haven/static/css/main.f3a7e9c4.css",
-    "main.js": "/github.io/panda-haven/static/js/main.d708c87d.js",
-    "static/media/blankProfile.png": "/github.io/panda-haven/static/media/blankProfile.afe07f57979e2bba2183.png",
-    "static/media/pandaLogoSvg.svg": "/github.io/panda-haven/static/media/pandaLogoSvg.e4e3839b1746612383549cb9a9a3f771.svg",
-    "index.html": "/github.io/panda-haven/index.html",
-    "main.f3a7e9c4.css.map": "/github.io/panda-haven/static/css/main.f3a7e9c4.css.map",
-    "main.d708c87d.js.map": "/github.io/panda-haven/static/js/main.d708c87d.js.map"
+    "main.css": "/panda-haven/static/css/main.f3a7e9c4.css",
+    "main.js": "/panda-haven/static/js/main.af717e97.js",
+    "static/media/blankProfile.png": "/panda-haven/static/media/blankProfile.afe07f57979e2bba2183.png",
+    "static/media/pandaLogoSvg.svg": "/panda-haven/static/media/pandaLogoSvg.e4e3839b1746612383549cb9a9a3f771.svg",
+    "index.html": "/panda-haven/index.html",
+    "main.f3a7e9c4.css.map": "/panda-haven/static/css/main.f3a7e9c4.css.map",
+    "main.af717e97.js.map": "/panda-haven/static/js/main.af717e97.js.map"
   },
   "entrypoints": [
     "static/css/main.f3a7e9c4.css",
-    "static/js/main.d708c87d.js"
+    "static/js/main.af717e97.js"
   ]
 }
