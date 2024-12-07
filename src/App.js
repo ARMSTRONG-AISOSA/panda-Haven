@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 // Pages
 import HomePage from "./pages/home/HomePage";
@@ -21,7 +21,7 @@ import ErrorPage from "./pages/error404/ErrorPage";
 const App = () => {
   return (
     <div>
-      <Router basename="/panda-haven">
+      <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/aboutus" element={<AboutUs />} />
