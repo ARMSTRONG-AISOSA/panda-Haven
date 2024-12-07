@@ -1,16 +1,16 @@
 import React from 'react';
-import './aboutUs.css';
+import './contactUs.css';
 import Navbar from '../../components/navbar/Navbar';
 
-const AboutUs = () => {
+const ContactUs = () => {
   return (
     <div>
       <Navbar />
       <div className='container'>
-        <h1>About Us</h1>
+        <h1>Contact Us</h1>
       </div>
     </div>
   )
 }
 
-export default AboutUs;
+export default ContactUs

@@ -1,6 +1,134 @@
 .navbar {
     padding: 10px 5%;
+    background-color: rgb(221, 215, 215);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.logoSection {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    flex: 1;
+    /* background-color: red; */
+}
+
 .logo {
-    width: 50px;
+    width: 40px;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+    flex: 2;
+}
+
+.profileSection {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    position: relative;
+    /* background-color: red; */
+}
+
+.profileInfo {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    border-radius: 50%;
+    border: 1px rgb(185, 185, 185) solid;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.username {
+    cursor: pointer;
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: var(--pry-color);
+    color: var(--sec-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: var(--bor-rad1);
+    padding: 4px 4px;
+    overflow: hidden;
+    min-width: 150px;
+
+}
+
+.dropdownMenu.slideIn {
+    animation: slideIn;
+    animation-duration: var(--trans-2);
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+
+.dropdownItem {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    text-decoration: none;
+    align-items: center;
+    transition: var(--trans-1);
+    /* display: block; */
+}
+
+.dropdownItem:not(:last-child):hover,
+.dropdownItem:not(:last-child):focus {
+    transform: scale(1.2);
+}
+
+.logoutButton {
+    background-color: var(--sec-color);
+    color: var(--pry-color);
+    border: 1px solid transparent;
+    border-radius: var(--bor-rad1);
+    transition: var(--trans-2) all;
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    font-weight: var(--font-bold);
+    cursor: pointer;
+}
+
+.logoutButton:hover {
+    border-color: var(--sec-color);
+    background-color: transparent;
+    color: var(--sec-color);
+}
+
+
+/* Responsiveness */
+@media screen and (max-width: 425px) {
+    .username {
+        display: none;
+    }
 }

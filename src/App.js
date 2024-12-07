@@ -6,6 +6,7 @@ import AboutUs from "./pages/about/AboutUs";
 import Advocacy from "./pages/advocacy/Advocacy";
 import Blog from "./pages/blog/Blog";
 import ComingSoon from "./pages/comingSoon/ComingSoon";
+import ContactUs from "./pages/contactUs/ContactUs";
 import Donate from "./pages/donate/Donate";
 import EduResources from "./pages/eduResources/EduResources";
 import JoinUs from "./pages/joinUs/JoinUs";
@@ -14,8 +15,6 @@ import Projects from "./pages/projects/Projects";
 import Shop from "./pages/shop/Shop";
 import SignUp from "./pages/signUp/SignUp";
 import Volunteer from "./pages/volunteer/Volunteer";
-// import A from "./pages";
-// import A from "./pages";
 
 import ErrorPage from "./pages/error404/ErrorPage";
 
@@ -29,6 +28,7 @@ const App = () => {
           <Route path="/advocacy" element={<Advocacy />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/comingsoon" element={<ComingSoon />} />
+          <Route path="/contactus" element={<ContactUs />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/eduresources" element={<EduResources />} />
           <Route path="/joinus" element={<JoinUs />} />

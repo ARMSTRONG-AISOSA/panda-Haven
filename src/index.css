@@ -2,14 +2,25 @@
 
 :root {
   --pry-color: #ffffff;
-  --pry-color: #000000;
-  --pry-color: #228b22;
-  --pry-color: #e6c200;
-  --pry-color: #87ceeb;
-  --pry-color: #a9a9a9;
+  --sec-color: #000000;
+  --green-color: #228b22;
+  --yellow-color: #e6c200;
+  --blue-color: #87ceeb;
+  --grey-color: #a9a9a9;
 
   /* Font Family */
   --d-script: "Dancing Script";
+
+  /* Font Weight */
+  --font-bold: bold;
+
+  /* Transition Duration*/
+  --trans-1: 0.3s;
+  --trans-2: 0.5s;
+
+  /* Border Radius */
+  --bor-rad1: 6px;
+  --bor-rad2: 12px;
 }
 
 * {
