@@ -21,7 +21,7 @@ import ErrorPage from "./pages/error404/ErrorPage";
 const App = () => {
   return (
     <div>
-      <Router>
+      <Router basename="/panda-haven">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/aboutus" element={<AboutUs />} />
