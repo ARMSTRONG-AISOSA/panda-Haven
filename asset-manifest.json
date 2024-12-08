@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/panda-haven/static/css/main.f3a7e9c4.css",
-    "main.js": "/panda-haven/static/js/main.39fb227d.js",
+    "main.js": "/panda-haven/static/js/main.3de00b72.js",
     "static/media/blankProfile.png": "/panda-haven/static/media/blankProfile.afe07f57979e2bba2183.png",
     "static/media/pandaLogoSvg.svg": "/panda-haven/static/media/pandaLogoSvg.e4e3839b1746612383549cb9a9a3f771.svg",
     "index.html": "/panda-haven/index.html",
     "main.f3a7e9c4.css.map": "/panda-haven/static/css/main.f3a7e9c4.css.map",
-    "main.39fb227d.js.map": "/panda-haven/static/js/main.39fb227d.js.map"
+    "main.3de00b72.js.map": "/panda-haven/static/js/main.3de00b72.js.map"
   },
   "entrypoints": [
     "static/css/main.f3a7e9c4.css",
-    "static/js/main.39fb227d.js"
+    "static/js/main.3de00b72.js"
   ]
 }
