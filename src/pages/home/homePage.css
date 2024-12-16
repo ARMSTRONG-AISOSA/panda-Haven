@@ -1,0 +1,87 @@
+.heroSection {
+    position: relative;
+    height: 80vh;
+    background-image: url('../../assets/images/panda_15.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--pry-color);
+}
+
+.heroContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.301);
+}
+
+.heroTitle {
+    margin-bottom: 1.25rem;
+}
+
+.heroSubtitle {
+    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.heroBtns {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.btn {
+    padding: var(--btn-pd);
+    font-size: var(--btn-ft-sz);
+    border-radius: var(--bor-rad1);
+    cursor: pointer;
+    transition: all var(--trans-1) ease;
+}
+
+.primary-btn {
+    border: 1px solid var(--pry-color);
+    background-color: transparent;
+    color: var(--pry-color);
+}
+
+.primary-btn:hover {
+    border: 1px solid var(--sec-color);
+    background-color: var(--pry-color);
+    color: var(--sec-color);
+}
+
+.secondary-btn {
+    border: 1px solid var(--sec-color);
+    background-color: var(--sec-color);
+    color: var(--pry-color);
+}
+
+.secondary-btn:hover {
+    border: 1px solid var(--sec-color);
+    background-color: var(--pry-color);
+    color: var(--sec-color);
+}
+
+.heroSearch {
+    width: 100%;
+    padding: 10px 16px;
+    /* font-size: 1rem; */
+    border: 1px solid var(--pry-color);
+    border-radius: var(--bor-rad1);
+    outline: none;
+    box-shadow: none;
+    transition: all var(--trans-1) ease-in-out;
+}
+
+
+.heroSearch::placeholder {
+    color: var(--grey-color);
+    font-style: italic;
+}
+
+.heroSearch:focus {
+    border-color: var(--green-color);
+    box-shadow: 0 0 8px rgba(76, 175, 79, 0.582);
+}

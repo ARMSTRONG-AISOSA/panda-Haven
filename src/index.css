@@ -7,6 +7,7 @@
   --yellow-color: #e6c200;
   --blue-color: #87ceeb;
   --grey-color: #a9a9a9;
+  --grey2-color: #dbdbdb;
 
   /* Font Family */
   --d-script: "Dancing Script";
@@ -21,6 +22,10 @@
   /* Border Radius */
   --bor-rad1: 6px;
   --bor-rad2: 12px;
+
+  /* Button */
+  --btn-ft-sz: 1.25rem;
+  --btn-pd: 0.625rem 1.25rem;
 }
 
 * {
@@ -62,7 +67,7 @@ p {
 
 h1 {
   font-weight: 600;
-  font-size: 2.2rem;
+  font-size: 3rem;
 }
 
 h2 {
