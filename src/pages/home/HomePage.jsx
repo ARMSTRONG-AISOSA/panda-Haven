@@ -11,7 +11,7 @@ const HomePage = () => {
       <HeroSection
         headTxt="Welcome to Panda Haven"
         subHeadTxt="Join us in protecting our gentle giants and their natural habitats."
-        class=""
+        classHidden=""
       />
 
       <div className='container'>
