@@ -1,0 +1,32 @@
+
+.btn {
+    padding: var(--btn-pd);
+    font-size: var(--btn-ft-sz);
+    border-radius: var(--bor-rad1);
+    cursor: pointer;
+    transition: all var(--trans-1) ease;
+}
+
+.pryBtn {
+    border: 1px solid var(--pry-color);
+    background-color: transparent;
+    color: var(--pry-color);
+}
+
+.pryBtn:hover {
+    border: 1px solid var(--sec-color);
+    background-color: var(--pry-color);
+    color: var(--sec-color);
+}
+
+.secBtn {
+    border: 1px solid var(--sec-color);
+    background-color: var(--sec-color);
+    color: var(--pry-color);
+}
+
+.secBtn:hover {
+    border: 1px solid var(--sec-color);
+    background-color: var(--pry-color);
+    color: var(--sec-color);
+}
