@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/panda-haven/static/css/main.90f3f98d.css",
-    "main.js": "/panda-haven/static/js/main.06283ca8.js",
+    "main.css": "/panda-haven/static/css/main.27114474.css",
+    "main.js": "/panda-haven/static/js/main.1ce26a72.js",
     "static/media/panda_15.jpg": "/panda-haven/static/media/panda_15.b63b7a54561e54ad7eb0.jpg",
+    "static/media/panda_13.jpg": "/panda-haven/static/media/panda_13.8a4b31197a985a990722.jpg",
     "static/media/blankProfile.png": "/panda-haven/static/media/blankProfile.afe07f57979e2bba2183.png",
     "static/media/pandaLogoSvg.svg": "/panda-haven/static/media/pandaLogoSvg.e4e3839b1746612383549cb9a9a3f771.svg",
     "static/media/slick.svg": "/panda-haven/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -10,11 +11,11 @@
     "static/media/slick.ttf": "/panda-haven/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/panda-haven/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/panda-haven/index.html",
-    "main.90f3f98d.css.map": "/panda-haven/static/css/main.90f3f98d.css.map",
-    "main.06283ca8.js.map": "/panda-haven/static/js/main.06283ca8.js.map"
+    "main.27114474.css.map": "/panda-haven/static/css/main.27114474.css.map",
+    "main.1ce26a72.js.map": "/panda-haven/static/js/main.1ce26a72.js.map"
   },
   "entrypoints": [
-    "static/css/main.90f3f98d.css",
-    "static/js/main.06283ca8.js"
+    "static/css/main.27114474.css",
+    "static/js/main.1ce26a72.js"
   ]
 }
