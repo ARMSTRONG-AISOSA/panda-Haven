@@ -1,0 +1,85 @@
+/* Container Styles */
+.our-projects-container {
+    padding: 50px 20px;
+    background-color: var(--grey-color);
+    /* background-color: var(--pry-color); */
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 30px;
+}
+
+/* Slider Card Styles */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--pry-color);
+    border: 1px solid var(--sec-color);
+    border-radius: var(  --bor-rad2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05) translateY(4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Image */
+.card-image {
+    width: 100%;
+    height: 50px;
+    /* height: 200px; */
+    object-fit: cover;
+}
+
+/* .card-image:hover {
+    transform: scale(1.05);
+} */
+
+/* Card Content */
+.card-content {
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.card-title {
+    margin-bottom: 10px;
+}
+
+.card-description {
+    /* color: #555; */
+}
+
+/* Slick Carousel Customization */
+.slick-slide {
+    padding: 10px;
+    outline: none; /* Remove focus outline */
+}
+
+.slick-dots {
+    bottom: -25px; /* Adjust dots position */
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #4CAF50; /* Active dot color */
+}
+
+.slick-dots li.slick-active button:before {
+    color: #45a049; /* Highlight active dot */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+
+
+}
+
+@media (max-width: 480px) {
+
+
+}

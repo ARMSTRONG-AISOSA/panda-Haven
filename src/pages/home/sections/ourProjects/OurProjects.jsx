@@ -1,76 +1,66 @@
 import React from 'react';
 import './ourProjects.css';
-import Slider from 'react-slick';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-// Sample card data
-const cards = [
-    {
-        id: 1,
-        title: "Panda Conservation",
-        description: "Learn how we are saving pandas and their habitats.",
-        image: "https://placeimg.com/300/200/nature",
-        postDate: "06-Dec-2024",
-        content: "Lorem",
-    },
-    {
-        id: 2,
-        title: "Volunteer Programs",
-        description: "Join our volunteer programs to make a difference.",
-        image: "https://placeimg.com/300/200/people",
-        postDate: "12-Nov-2024",
-        content: "Lorem",
-    },
-    {
-        id: 3,
-        title: "Wildlife Education",
-        description: "Educating the next generation about wildlife.",
-        image: "https://placeimg.com/300/200/animals",
-        postDate: "03-Sep-2024",
-        content: "Lorem",
-    },
-    {
-        id: 4,
-        title: "Adopt a Panda",
-        description: "Support pandas by adopting and sponsoring them.",
-        image: "https://placeimg.com/300/200/tech",
-        postDate: "30-Jun-2024",
-        content: "Lorem",
-    },
-];
-
+import { cards } from '../../../../data/data';
+import { cardImg } from '../../../../assets/images/images';
 
 
 const OurProjects = () => {
-
+    // Slider settings
     const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3, // Number of cards visible at a time
-        slidesToScroll: 1,
+        dots: true, // Enable navigation dots
+        infinite: true, // Loop through slides
+        speed: 500, // Slide change speed .5 sec
+        slidesToShow: 3, // Show 3 cards at a time
+        slidesToScroll: 1, // Scroll by 1 card
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 30000, // Change every 30 sec
         responsive: [
             {
-                breakpoint: 1024, // Tablet and smaller
+                breakpoint: 1024,  // Adjust settings for larger screens 
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
                 },
             },
             {
-                breakpoint: 600, // Mobile devices
+                breakpoint: 768,  // Adjust settings for medium screens 
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    initialSlide: 2
+                },
+            },
+            {
+                breakpoint: 480,  // Adjust settings for small screens
                 settings: {
                     slidesToShow: 1,
+                    slidesToScroll: 1
                 },
             },
         ],
     };
 
     return (
-        <div>
+        <div className="our-projects-container">
+            <h2 className="section-title">Our Programs</h2>
+            <Slider {...settings}>
+                {cards.map((card) => (
+                    <div key={card.id} className="card">
+                        <img src={card.image} alt={card.title} className="card-image" />
+                        <div className="card-content">
+                            <h3 className="card-title">{card.title}</h3>
+                            <p className="card-description">{card.description}</p>
+                        </div>
+                    </div>
+                ))}
+            </Slider>
         </div>
-    )
-}
+    );
+};
 
 export default OurProjects;
