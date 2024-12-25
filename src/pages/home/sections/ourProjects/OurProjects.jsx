@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { cards } from '../../../../data/data';
-import { cardImg } from '../../../../assets/images/images';
+import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 
 
 const OurProjects = () => {
@@ -16,7 +16,7 @@ const OurProjects = () => {
         slidesToShow: 3, // Show 3 cards at a time
         slidesToScroll: 1, // Scroll by 1 card
         autoplay: true,
-        autoplaySpeed: 30000, // Change every 30 sec
+        autoplaySpeed: 30000,
         responsive: [
             {
                 breakpoint: 1024,  // Adjust settings for larger screens 
@@ -47,14 +47,18 @@ const OurProjects = () => {
 
     return (
         <div className="our-projects-container">
-            <h2 className="section-title">Our Programs</h2>
+            <h2 className="sectionTitle">Our Programs</h2>
             <Slider {...settings}>
                 {cards.map((card) => (
                     <div key={card.id} className="card">
                         <img src={card.image} alt={card.title} className="card-image" />
                         <div className="card-content">
-                            <h3 className="card-title">{card.title}</h3>
+                            <p className="postedOn"><b>posted on:</b> <i>{card.postDate}</i></p>
+                            <h3 className="cardTitle">{card.title}</h3>
                             <p className="card-description">{card.description}</p>
+                            <a href='#' className='arrowIcon'>
+                                <FaArrowCircleRight className='FaArrowCircleRight' />
+                            </a>
                         </div>
                     </div>
                 ))}

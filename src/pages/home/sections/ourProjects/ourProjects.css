@@ -2,51 +2,61 @@
 .our-projects-container {
     padding: 50px 20px;
     background-color: var(--grey-color);
-    /* background-color: var(--pry-color); */
-    text-align: center;
 }
 
-.section-title {
+.sectionTitle {
     margin-bottom: 30px;
+}
+
+.cardNavArrow {
+    font-size: 100px;
+    color: red;
+    top: 0;
+    right: -25px;
+    position: absolute;
+    z-index: 500;
 }
 
 /* Slider Card Styles */
 .card {
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: var(--pry-color);
     border: 1px solid var(--sec-color);
-    border-radius: var(  --bor-rad2);
+    border-radius: var(--bor-rad2);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: all 0.3s;
+    background-color: var(--grey2-color);
 }
 
 .card:hover {
-    transform: scale(1.05) translateY(4px);
+    transform: scale(1.01) translateY(4px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Card Image */
 .card-image {
     width: 100%;
-    height: 50px;
-    /* height: 200px; */
+    aspect-ratio: 1.5/1;
     object-fit: cover;
+    transition: all var(--trans-4);
 }
 
-/* .card-image:hover {
-    transform: scale(1.05);
-} */
+.card-image:hover {
+    filter: grayscale(1);
+}
 
 /* Card Content */
 .card-content {
     padding: 20px 20px;
-    text-align: center;
 }
 
-.card-title {
+.postedOn {
+    font-size: 0.9rem;
+}
+
+.cardTitle {
     margin-bottom: 10px;
 }
 
@@ -54,32 +64,43 @@
     /* color: #555; */
 }
 
+
+.FaArrowCircleRight {
+    width: var(--Icon-sz-1);
+    height: var(--Icon-sz-1);
+    transition: var(--trans-2);
+    cursor: pointer;
+    color: var(--sec-color);
+}
+
+.FaArrowCircleRight:hover {
+    transform: translateX(4px);
+}
+
 /* Slick Carousel Customization */
 .slick-slide {
     padding: 10px;
-    outline: none; /* Remove focus outline */
+    outline: none;
+    /* Remove focus outline */
 }
 
 .slick-dots {
-    bottom: -25px; /* Adjust dots position */
+    bottom: -25px;
+    /* Adjust dots position */
 }
 
 .slick-dots li button:before {
     font-size: 12px;
-    color: #4CAF50; /* Active dot color */
+    color: #4CAF50;
+    /* Active dot color */
 }
 
 .slick-dots li.slick-active button:before {
-    color: #45a049; /* Highlight active dot */
+    color: #45a049;
+    /* Highlight active dot */
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
+@media (max-width: 768px) {}
 
-
-}
-
-@media (max-width: 480px) {
-
-
-}
+@media (max-width: 480px) {}

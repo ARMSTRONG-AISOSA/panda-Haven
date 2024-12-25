@@ -18,6 +18,8 @@
   /* Transition Duration*/
   --trans-1: 0.3s;
   --trans-2: 0.5s;
+  --trans-3: 0.8s;
+  --trans-4: 1s;
 
   /* Border Radius */
   --bor-rad1: 6px;
@@ -26,6 +28,12 @@
   /* Button */
   --btn-ft-sz: 1.25rem;
   --btn-pd: 0.625rem 1.25rem;
+
+  /* Icons */
+  --Icon-sz-1: 2.188rem; /* 35px */
+  --Icon-sz-2: 2.5rem; /* 40px */
+  --Icon-sz-3: 2.813rem; /* 45px */
+  --Icon-sz-4: 3.438rem; /* 55px */
 }
 
 * {
