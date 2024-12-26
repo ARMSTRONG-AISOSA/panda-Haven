@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { cards } from '../../../../data/data';
-import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
+import { FaArrowCircleRight } from "react-icons/fa";
 
 
 const OurProjects = () => {
@@ -47,7 +47,7 @@ const OurProjects = () => {
 
     return (
         <div className="our-projects-container">
-            <h2 className="sectionTitle">Our Programs</h2>
+            <h2 className="sectionTitle titleUnderline">Our Programs</h2>
             <Slider {...settings}>
                 {cards.map((card) => (
                     <div key={card.id} className="card">
@@ -56,8 +56,12 @@ const OurProjects = () => {
                             <p className="postedOn"><b>posted on:</b> <i>{card.postDate}</i></p>
                             <h3 className="cardTitle">{card.title}</h3>
                             <p className="card-description">{card.description}</p>
-                            <a href='#' className='arrowIcon'>
-                                <FaArrowCircleRight className='FaArrowCircleRight' />
+                            <a
+                                href='#'
+                                className='arrowIcon'
+                            >
+                                <FaArrowCircleRight className='FaArrowCircleRight'
+                                />
                             </a>
                         </div>
                     </div>

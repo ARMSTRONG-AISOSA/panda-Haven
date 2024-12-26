@@ -1,21 +1,13 @@
 /* Container Styles */
 .our-projects-container {
-    padding: 50px 20px;
-    background-color: var(--grey-color);
+    padding: 50px 0px;
 }
 
 .sectionTitle {
     margin-bottom: 30px;
+    margin-left: 15px;
 }
 
-.cardNavArrow {
-    font-size: 100px;
-    color: red;
-    top: 0;
-    right: -25px;
-    position: absolute;
-    z-index: 500;
-}
 
 /* Slider Card Styles */
 .card {
@@ -33,6 +25,28 @@
 .card:hover {
     transform: scale(1.01) translateY(4px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.slick-prev,
+.slick-next {
+    width: 40px !important;
+    height: 40px !important;
+    z-index: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: var(--grey-color) !important;
+    font-size: 40px !important;
+}
+
+.slick-dots li button:before {
+    /* color: red !important; */
+    font-size: 12px !important;
+}
+
+.slick-dots li.slick-active button:before {
+    /* color: red !important; */
 }
 
 /* Card Image */
@@ -64,8 +78,12 @@
     /* color: #555; */
 }
 
+.arrowIcon {
+    /* background-color: red; */
+}
 
 .FaArrowCircleRight {
+    margin-top: 10px;
     width: var(--Icon-sz-1);
     height: var(--Icon-sz-1);
     transition: var(--trans-2);
@@ -103,4 +121,15 @@
 /* Responsive Adjustments */
 @media (max-width: 768px) {}
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+
+    .slick-prev,
+    .slick-next {
+        display: none;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        display: none;
+    }
+}

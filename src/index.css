@@ -30,10 +30,14 @@
   --btn-pd: 0.625rem 1.25rem;
 
   /* Icons */
-  --Icon-sz-1: 2.188rem; /* 35px */
-  --Icon-sz-2: 2.5rem; /* 40px */
-  --Icon-sz-3: 2.813rem; /* 45px */
-  --Icon-sz-4: 3.438rem; /* 55px */
+  --Icon-sz-1: 2.188rem;
+  /* 35px */
+  --Icon-sz-2: 2.5rem;
+  /* 40px */
+  --Icon-sz-3: 2.813rem;
+  /* 45px */
+  --Icon-sz-4: 3.438rem;
+  /* 55px */
 }
 
 * {
@@ -98,6 +102,39 @@ p {
 }
 
 
+
+/* ================= General & Component Classes================= */
+.titleUnderline {
+  position: relative;
+  display: inline-block;
+}
+
+.titleUnderline:after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  /* width: 100%; */
+  width: 5rem;
+  height: 6px;
+  background: var(--sec-color);
+}
+
+.reverseFlexSection {
+  flex-direction: row-reverse;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  /*  */
+  border-top: 1px solid var(--grey2-color);
+  padding: 2.5rem 0;
+
+  align-items: stretch; /* Ensures children stretch to equal height */
+}
+
+
 /* ================= Responsiveness ================= */
 /* ======== Laptop ======== */
 @media screen and (max-width: 1024px) {
@@ -124,5 +161,17 @@ p {
 @media screen and (max-width: 320px) {
   html {
     /* font-size: 30%; */
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .flexSection {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .reverseFlexSection {
+    flex-direction: column;
+    width: 100%;
   }
 }

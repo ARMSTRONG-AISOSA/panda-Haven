@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { MdArrowDropDown, MdArrowDropUp, MdOutlineMenuOpen } from "react-icons/md";
 import { IoMenuSharp } from "react-icons/io5";
 import { blankProfile, logo } from '../../assets/images/images';
+import Button from '../button/Button';
 
 
 const Navbar = () => {
@@ -93,7 +94,13 @@ const Navbar = () => {
                     <div className={`profileDd ${profileDd ? "slideIn" : ""}`}>
                         <a href="#" className="profileDdItem">Profile</a>
                         <a href="#" className="profileDdItem">Settings</a>
-                        <button className="profileDdItem logoutButton">Logout</button>
+
+                        <Button
+                            className="profileDdItem logoutButton"
+                            label="Logout"
+                            variant="sec"
+                            onClick={() => alert('Logout Btn Clicked')}
+                        />
                     </div>
                 )}
             </div>
