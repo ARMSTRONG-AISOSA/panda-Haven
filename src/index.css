@@ -8,6 +8,7 @@
   --blue-color: #87ceeb;
   --grey-color: #a9a9a9;
   --grey2-color: #dbdbdb;
+  --grey3-color: #e7e7e7;
 
   /* Font Family */
   --d-script: "Dancing Script";
@@ -151,6 +152,13 @@ p {
 
   align-items: stretch; /* Ensures children stretch to equal height */
 }
+
+.grey3 {
+  background-color: var(--grey3-color);
+}
+
+
+
 
 
 /* ================= Responsiveness ================= */

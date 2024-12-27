@@ -35,7 +35,7 @@ const CommunityFeedback = () => {
                 },
             },
             {
-                breakpoint: 480,  // Adjust settings for small screens
+                breakpoint: 580,  // Adjust settings for small screens
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -49,18 +49,18 @@ const CommunityFeedback = () => {
             <h2 className='centerTitleUnderline'>Community Feedback</h2>
 
             {/* {...settings} : the syntax is the spread operator. It passes all the properties defined in the settings object as individual props to the <Slider> component. */}
-            <Slider {...settings}>
+            <Slider className='slider' {...settings}>
                 {communityFeedback.map((comFeedback) => (
-                    <div className='cFCards' key={comFeedback.id}>
-                        <div>
+                    <div className='cFCard' key={comFeedback.id}>
+                        <div className='cFCardP'>
                             <p>{comFeedback.feedback}</p>
                         </div>
-                        {/* <div>
-                            <img src={comFeedback.img} alt="profile img" />
-                        </div> */}
-                        {/* <div>
+                        <div className='cFImgDiv'>
+                            <img className='cFImg' src={comFeedback.img} alt="profile img" />
+                        </div>
+                        <div>
                             <p><b>{comFeedback.fullName}</b></p>
-                        </div> */}
+                        </div>
                     </div>
                 ))}
             </Slider>

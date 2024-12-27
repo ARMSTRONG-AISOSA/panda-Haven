@@ -89,19 +89,19 @@ export const communityFeedback = [
     },
     {
         id: 2,
-        fullName: "John Doe",
+        fullName: "Jane Doe",
         feedback: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
         img: require('../assets/images/blankProfile.png'),
     },
     {
         id: 3,
-        fullName: "John Doe",
+        fullName: "Joseph Doe",
         feedback: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
         img: require('../assets/images/blankProfile.png'),
     },
     {
         id: 4,
-        fullName: "John Doe",
+        fullName: "Jack Doe",
         feedback: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
         img: require('../assets/images/blankProfile.png'),
     },

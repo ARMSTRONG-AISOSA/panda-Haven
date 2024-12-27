@@ -3,7 +3,6 @@
 
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     /* gap: 20px; */
     gap: 2.5rem;
@@ -12,28 +11,52 @@
     padding: 40px 0;
 
     width: 100%;
-    background-color: blue;
-    /* Remove */
-    overflow: hidden;
 
     /* Adjust dimensions */
     height: auto;
-    /* margin: 10px; */
 }
 
-.cFCards {
-    background-color: red;
+.cFCard {
     display: flex;
     flex-direction: column;
     background-color: var(--pry-color);
-    border: 1px solid var(--sec-color);
-    border-radius: var(--bor-rad2);
+    border: 1px solid var(--grey-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: all 0.3s;
-    background-color: var(--grey2-color);
-
-    height: 100px;
-    width: 100px;
+    /* overflow: hidden; */
+    transition: all var(--trans-1);
+    padding: 20px 20px;
+    border-radius: var(--bor-rad1);
+    text-align: center;
 }
 
+.cFCardP {
+    max-width: 500PX;
+}
+
+.cFImgDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.cFImg {
+    height: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.slick-dots {
+    position: absolute;
+    /* Absolute positioning for custom placement */
+    bottom: -30px;
+    /* Adjust this value to move dots further up or down */
+    left: 50%;
+    /* Center horizontally */
+    transform: translateX(-50%);
+    /* Ensure perfect centering */
+    display: flex !important;
+    /* Ensure dots remain displayed */
+    justify-content: center;
+    /* Center dots in the container */
+}

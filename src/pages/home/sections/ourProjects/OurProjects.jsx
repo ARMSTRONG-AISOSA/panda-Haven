@@ -36,7 +36,7 @@ const OurProjects = () => {
                 },
             },
             {
-                breakpoint: 480,  // Adjust settings for small screens
+                breakpoint: 530,  // Adjust settings for small screens
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1

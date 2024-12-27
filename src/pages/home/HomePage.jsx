@@ -27,7 +27,7 @@ const HomePage = () => {
         <HowWeWork />
         <OurGoal />
         <OurImpact />
-        <CommunityFeedback />
+      <CommunityFeedback />
       </div>
     </div>
   )
