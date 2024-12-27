@@ -9,6 +9,12 @@ import HowWeWork from './sections/howWeWork/HowWeWork';
 import OurGoal from './sections/ourGoal/OurGoal';
 import OurImpact from './sections/ourImpact/OurImpact';
 import CommunityFeedback from './sections/communityFeedback/CommunityFeedback';
+import UpcomingEvents from './sections/upcomingEvents/UpcomingEvents';
+import MeetOurTeam from './sections/meetOurTeam/MeetOurTeam';
+import Footer from '../../components/footer/Footer';
+import NewsLetter from '../../components/newsLetter/NewsLetter';
+import ContactUs from './sections/contactUs/ContactUs';
+import Register from '../../components/register/Register';
 
 const HomePage = () => {
   return (
@@ -27,10 +33,17 @@ const HomePage = () => {
         <HowWeWork />
         <OurGoal />
         <OurImpact />
-      <CommunityFeedback />
+        <CommunityFeedback />
+        <UpcomingEvents />
+        <MeetOurTeam />
+        <NewsLetter />
+        <ContactUs />
+        <Register />
       </div>
+
+      <Footer />
     </div>
   )
 }
 
-export default HomePage
+export default HomePage;
