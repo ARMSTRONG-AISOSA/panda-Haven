@@ -33,3 +33,76 @@ export const cards = [
         content: "Lorem",
     },
 ];
+
+export const ourGoals = [
+    {
+        id: 1,
+        goal: "Lorem Ipsum is simply dummy text of theLorem Ipsum is simply dummy text of the. Lorem Ipsum is simply dummy text of theLorem Ipsum is simply dummy text of the simply dummy.",
+    },
+    {
+        id: 2,
+        goal: "Lorem Ipsum is simply dummy text of theLorem Ipsum is simply dummy text of the. Lorem Ipsum is simply dummy text of theLorem Ipsum is simply dummy text of the simply dummy.",
+    },
+    {
+        id: 3,
+        goal: "Lorem Ipsum is simply dummy text of theLorem Ipsum is simply dummy text of the. Lorem Ipsum is simply dummy text of theLorem Ipsum is simply dummy text of the simply dummy.",
+    },
+    {
+        id: 4,
+        goal: "Lorem Ipsum is simply dummy text of theLorem Ipsum is simply dummy text of the. Lorem Ipsum is simply dummy text of theLorem Ipsum is simply dummy text of the simply dummy.",
+    },
+    {
+        id: 5,
+        goal: "Lorem Ipsum is simply dummy text of theLorem Ipsum is simply dummy text of the. Lorem Ipsum is simply dummy text of theLorem Ipsum is simply dummy text of the simply dummy.",
+    },
+];
+
+export const impactData = [
+    {
+        id: 1,
+        info: "Community Present",
+        number: "7",
+    },
+    {
+        id: 2,
+        info: "Active Shelter",
+        number: "12",
+    },
+    {
+        id: 3,
+        info: "Supported Animals",
+        number: "33",
+    },
+    {
+        id: 4,
+        info: "Community Present",
+        number: "7",
+    },
+];
+
+export const communityFeedback = [
+    {
+        id: 1,
+        fullName: "John Doe",
+        feedback: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        img: require('../assets/images/blankProfile.png'),
+    },
+    {
+        id: 2,
+        fullName: "John Doe",
+        feedback: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        img: require('../assets/images/blankProfile.png'),
+    },
+    {
+        id: 3,
+        fullName: "John Doe",
+        feedback: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        img: require('../assets/images/blankProfile.png'),
+    },
+    {
+        id: 4,
+        fullName: "John Doe",
+        feedback: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        img: require('../assets/images/blankProfile.png'),
+    },
+];

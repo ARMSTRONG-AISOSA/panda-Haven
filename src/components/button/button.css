@@ -35,3 +35,16 @@
 }
 
 
+.tertBtn {
+    border: 1px solid var(--sec-color);
+    background-color: var(--pry-color);
+    color: var(--sec-color);
+}
+
+.tertBtn:hover {
+    border: 1px solid var(--sec-color);
+    background-color: var(--sec-color);
+    color: var(--pry-color);
+}
+
+

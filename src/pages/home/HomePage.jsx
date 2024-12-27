@@ -6,6 +6,9 @@ import OurProjects from './sections/ourProjects/OurProjects';
 import WhoWeAre from './sections/whoWeAre/WhoWeAre';
 import OurMission from './sections/ourMission/OurMission';
 import HowWeWork from './sections/howWeWork/HowWeWork';
+import OurGoal from './sections/ourGoal/OurGoal';
+import OurImpact from './sections/ourImpact/OurImpact';
+import CommunityFeedback from './sections/communityFeedback/CommunityFeedback';
 
 const HomePage = () => {
   return (
@@ -22,6 +25,9 @@ const HomePage = () => {
         <WhoWeAre />
         <OurMission />
         <HowWeWork />
+        <OurGoal />
+        <OurImpact />
+        <CommunityFeedback />
       </div>
     </div>
   )

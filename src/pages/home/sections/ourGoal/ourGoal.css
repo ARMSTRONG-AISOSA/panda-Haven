@@ -1,0 +1,39 @@
+.oGSection {
+    border: 1px solid var(--grey-color);
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.goalBox {
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+}
+
+.goals {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.gIconDiv {
+    width: 45px;
+    height: auto;
+}
+
+.goalIcon {
+    font-size: 33px;
+}
+
+
+@media screen and (max-width: 725px) {
+    .goals {
+        width: 100%;
+    }
+}

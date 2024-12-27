@@ -1,13 +1,12 @@
 import React from 'react';
-import './ourProjects.css';
-import Slider from "react-slick";
+import './communityFeedback.css';
+import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { cards } from '../../../../data/data';
-import { FaArrowCircleRight } from "react-icons/fa";
+import { communityFeedback } from '../../../../data/data';
 
+const CommunityFeedback = () => {
 
-const OurProjects = () => {
     // Slider settings
     const settings = {
         dots: true, // Enable navigation dots
@@ -46,29 +45,27 @@ const OurProjects = () => {
     };
 
     return (
-        <div className="our-projects-container">
-            <h2 className="sectionTitle centerTitleUnderline">Our Programs</h2>
+        <div className='cFSection'>
+            <h2 className='centerTitleUnderline'>Community Feedback</h2>
+
+            {/* {...settings} : the syntax is the spread operator. It passes all the properties defined in the settings object as individual props to the <Slider> component. */}
             <Slider {...settings}>
-                {cards.map((card) => (
-                    <div key={card.id} className="card">
-                        <img src={card.image} alt={card.title} className="card-image" />
-                        <div className="card-content">
-                            <p className="postedOn"><b>posted on:</b> <i>{card.postDate}</i></p>
-                            <h3 className="cardTitle">{card.title}</h3>
-                            <p className="card-description">{card.description}</p>
-                            <a
-                                href='#'
-                                className='arrowIcon'
-                            >
-                                <FaArrowCircleRight className='FaArrowCircleRight'
-                                />
-                            </a>
+                {communityFeedback.map((comFeedback) => (
+                    <div className='cFCards' key={comFeedback.id}>
+                        <div>
+                            <p>{comFeedback.feedback}</p>
                         </div>
+                        {/* <div>
+                            <img src={comFeedback.img} alt="profile img" />
+                        </div> */}
+                        {/* <div>
+                            <p><b>{comFeedback.fullName}</b></p>
+                        </div> */}
                     </div>
                 ))}
             </Slider>
         </div>
-    );
-};
+    )
+}
 
-export default OurProjects;
+export default CommunityFeedback;

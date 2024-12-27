@@ -1,0 +1,81 @@
+.oISection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    border-top: 1px solid var(--grey2-color);
+    padding: 40px 0;
+
+    align-items: stretch;
+    /* Ensures children stretch to equal height */
+}
+
+.leftIS {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    gap: 2.5rem;
+
+    /* border */
+    border: 1px solid var(--grey-color);
+    width: 100%;
+    /* Make the height take up all available space */
+
+    padding: 40px 20px;
+}
+
+.oILeftContent {
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.impactBtnDiv {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.impactBtn {
+    font-size: 1rem !important;
+}
+
+
+
+
+.rightIS {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    gap: 2rem;
+
+    /* border */
+    border: 1px solid var(--grey-color);
+    width: 100%;
+    /* Make the height take up all available space */
+
+    padding: 50px 20px;
+}
+
+.rISContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 500px;
+    border-top: 1px solid var(--grey-color);
+    padding-top: 8px;
+}
+
+
+
+/* ======================= Responsiveness */
+
+@media screen and (max-width: 725px) {
+    .oISection {
+        flex-direction: column;
+        width: 100%;
+    }
+}
