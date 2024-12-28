@@ -119,3 +119,51 @@ export const eventData = [
         eventInfo: "Lorem Ipsum is simply dummy text of the printing and ...",
     },
 ];
+
+export const teamData = [
+    {
+        id: 1,
+        fullName: "James Cameron",
+        profileImg: require('../assets/images/blankProfile.png'),
+        jobTitle: "Marketer",
+        facebook: "https://www.facebook.com/",
+        linkedIn: "https://www.linkedin.com/",
+        instagram: "https://www.instagram.com/",
+    },
+    {
+        id: 2,
+        fullName: "Jessica Romanoff",
+        profileImg: require('../assets/images/blankProfile.png'),
+        jobTitle: "Marketer",
+        facebook: "https://www.facebook.com/",
+        linkedIn: "https://www.linkedin.com/",
+        instagram: "https://www.instagram.com/",
+    },
+    {
+        id: 3,
+        fullName: "Roger Smith",
+        profileImg: require('../assets/images/blankProfile.png'),
+        jobTitle: "Marketer",
+        facebook: "https://www.facebook.com/",
+        linkedIn: "https://www.linkedin.com/",
+        instagram: "https://www.instagram.com/",
+    },
+    {
+        id: 4,
+        fullName: "Jeff Smith",
+        profileImg: require('../assets/images/blankProfile.png'),
+        jobTitle: "Marketer",
+        facebook: "https://www.facebook.com/",
+        linkedIn: "https://www.linkedin.com/",
+        instagram: "https://www.instagram.com/",
+    },
+    {
+        id: 5,
+        fullName: "Jenny Parker",
+        profileImg: require('../assets/images/blankProfile.png'),
+        jobTitle: "Marketer",
+        facebook: "https://www.facebook.com/",
+        linkedIn: "https://www.linkedin.com/",
+        instagram: "https://www.instagram.com/",
+    },
+];

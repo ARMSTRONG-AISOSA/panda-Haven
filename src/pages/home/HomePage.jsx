@@ -36,8 +36,8 @@ const HomePage = () => {
         <CommunityFeedback />
         <UpcomingEvents />
         <MeetOurTeam />
-        <NewsLetter />
         <ContactUs />
+        <NewsLetter />
         <Register />
       </div>
 

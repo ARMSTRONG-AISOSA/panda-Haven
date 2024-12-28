@@ -1,0 +1,78 @@
+.mOTSection {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    padding: 40px 0;
+    border-top: 1px solid var(--grey1-color);
+}
+
+.mOTCard {
+    display: flex;
+    /* flex-direction: column; */
+    background-color: var(--pry-color);
+    border: 1px solid var(--grey1-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all var(--trans-1);
+    padding: 20px 0px;
+    border-radius: var(--bor-rad1);
+    text-align: center;
+}
+
+.mOTImgDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.mOTImg {
+    height: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.mOTJobTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.mOTIconDiv {
+    width: 100%;
+    background-color: var(--grey2-color);
+    padding: 10px 0px 5px 0px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mOTIconDiv>a {
+    color: var(--sec-color);
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    transition: all var(--trans-2);
+}
+
+.mOTIconDiv>a:hover {
+    /* transform: scale(1.1), translateX(-4px); */
+    transform: scale(1.1) translateY(-5px);
+}
+
+
+/* ==================== Responsiveness ========================== */
+
+@media screen and (max-width: 768px) {
+    .mOTIconDiv {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .mOTIconDiv {
+        gap: 20px;
+    }
+}
