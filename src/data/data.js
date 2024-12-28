@@ -106,3 +106,16 @@ export const communityFeedback = [
         img: require('../assets/images/blankProfile.png'),
     },
 ];
+
+export const eventData = [
+    {
+        id: 1,
+        eventTitle: "Event A",
+        eventInfo: "Lorem Ipsum is simply dummy text of the printing and ...",
+    },
+    {
+        id: 2,
+        eventTitle: "Event B",
+        eventInfo: "Lorem Ipsum is simply dummy text of the printing and ...",
+    },
+];

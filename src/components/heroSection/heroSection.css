@@ -45,7 +45,7 @@
 
 
 .heroSearch::placeholder {
-    color: var(--grey-color);
+    color: var(--grey1-color);
     font-style: italic;
 }
 

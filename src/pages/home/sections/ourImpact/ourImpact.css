@@ -19,7 +19,7 @@
     gap: 2.5rem;
 
     /* border */
-    border: 1px solid var(--grey-color);
+    border: 1px solid var(--grey1-color);
     width: 100%;
     /* Make the height take up all available space */
 
@@ -53,7 +53,7 @@
     gap: 2rem;
 
     /* border */
-    border: 1px solid var(--grey-color);
+    border: 1px solid var(--grey1-color);
     width: 100%;
     /* Make the height take up all available space */
 
@@ -65,7 +65,7 @@
     align-items: center;
     justify-content: space-between;
     max-width: 500px;
-    border-top: 1px solid var(--grey-color);
+    border-top: 1px solid var(--grey1-color);
     padding-top: 8px;
 }
 
