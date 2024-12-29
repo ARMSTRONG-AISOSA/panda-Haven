@@ -77,9 +77,9 @@ const MeetOurTeam = () => {
 
             {/* Social Handles */}
             <div className='mOTIconDiv'>
-              <a className='mOTIconLink' href={`${tData.facebook}`} target='_blank' ><FaFacebookF /></a>
-              <a href={`${tData.linkedIn}`} target='_blank'><FaLinkedinIn /></a>
-              <a href={`${tData.instagram}`} target='_blank'><FaInstagram /></a>
+              <a href={`${tData.facebook}`} target='_blank' rel='noopener noreferrer' ><FaFacebookF /></a>
+              <a href={`${tData.linkedIn}`} target='_blank' rel='noopener noreferrer'><FaLinkedinIn /></a>
+              <a href={`${tData.instagram}`} target='_blank' rel='noopener noreferrer'><FaInstagram /></a>
             </div>
           </div>
         ))}

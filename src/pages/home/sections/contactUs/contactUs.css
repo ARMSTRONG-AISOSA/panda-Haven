@@ -1,0 +1,65 @@
+.cUDivSection {
+    display: flex;
+    gap: 40px;
+    padding: 40px 0px;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--grey2-color);
+    align-items: stretch; /* Ensures children stretch to equal height */
+}
+
+.cULeftSide,
+.cURightSide {
+    flex: 1;
+}
+
+.cULSText {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 40px;
+}
+
+.cURSForm {
+    background-color: blue;
+}
+
+.cFSendBtn {
+    font-size: 1rem !important;
+}
+
+.cURSText {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 40px;
+    background-color: red;
+}
+
+
+/* =================== Responsiveness ======================== */
+
+
+@media screen and (max-width: 700px) {
+    .iframeContact {
+        height: 380px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .cUDivSection {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    .iframeContact {
+        height: 300px ;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .iframeContact {
+        width: 300px;
+    }
+}
+
