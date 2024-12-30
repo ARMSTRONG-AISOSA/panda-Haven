@@ -50,9 +50,10 @@ const ContactUs = () => {
           width="600"
           height="450"
           style={{ border: 0 }}
-          allowfullscreen=""
+          // allowfullscreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
+        // referrerpolicy="no-referrer-when-downgrade"
+        >
 
         </iframe>
       </div>
@@ -60,16 +61,16 @@ const ContactUs = () => {
         <h3 className='cURSText'>Contact Us</h3>
 
         <form
-          // onSubmit={handleFormSubmit}
+          onSubmit={handleSubmit}
           className='cURSForm'
         >
 
           <div className='formGroup'>
-            <label htmlFor="name">Name</label>
+            <label htmlFor="userName">Name</label>
             <input
               type="text"
-              id='name'
-              name='name'
+              id='userName'
+              name='userName'
               value={FormData.userName}
               onChange={handleChange}
               placeholder='Enter Full Name'

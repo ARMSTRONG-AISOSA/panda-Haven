@@ -1,0 +1,41 @@
+.registerSection {
+    display: flex;
+    gap: 40px;
+    padding: 40px 0px;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--grey2-color);
+    align-items: stretch;
+    /* Ensures children stretch to equal height */
+}
+
+.rSLeftSide,
+.rSRightSide {
+    flex: 1;
+}
+
+.rSLeftSide {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.rSRightSide {
+    display: flex;
+    gap: 30px;
+}
+
+.rBtn {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+/* ======================== Responsiveness ===============  */
+
+@media screen and (max-width: 580px) {
+    .registerSection {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}

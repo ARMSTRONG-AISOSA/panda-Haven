@@ -1,0 +1,59 @@
+.nLSection {
+    display: flex;
+    gap: 40px;
+    padding: 40px 0px;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--grey2-color);
+    align-items: stretch;
+    /* Ensures children stretch to equal height */
+}
+
+.nLSubSection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 40px 20px 40px;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--grey2-color);
+    width: 100%;
+    height: auto;
+    background-color: var(--greyDark-color);
+    color: var(--pry-color);
+    text-align: center;
+    max-width: 850px;
+    border-radius: var(--bor-rad2);
+}
+
+.nLIconDiv {
+    font-size: 45px;
+}
+
+.nLP {
+    max-width: 600px;
+    font-weight: 300;
+}
+
+.joinUsForm {
+    display: flex;
+    align-items: stretch;
+    /* Ensures children stretch to equal height */
+    background-color: red;
+    max-width: 500px;
+    /* width: 100%; */
+}
+
+.joinUsInput {
+    flex: 1;
+}
+
+.nLBtn {}
+
+
+@media screen and (min-width: 500px) {
+    .joinUsForm {
+        width: 80%;
+    }
+
+}
