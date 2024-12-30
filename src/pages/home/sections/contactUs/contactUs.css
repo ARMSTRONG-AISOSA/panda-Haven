@@ -14,6 +14,11 @@
     flex: 1;
 }
 
+
+.iframeContact {
+    width: 100%;
+}
+
 .cULSText {
     width: 100%;
     text-align: left;
@@ -26,7 +31,7 @@
     gap: 1.2rem;
 }
 
-.cURSForm > div:last-child {
+.cURSForm>div:last-child {
     padding-top: 20px;
 }
 
@@ -54,7 +59,6 @@
 .formGroup input:focus,
 .formGroup textarea:focus {
     border: 1px solid var(--grey-color);
-    
     box-shadow: 0 0 3px rgba(70, 70, 70, 0.5);
 }
 
@@ -70,30 +74,26 @@
 
 
 
+
 /* =================== Responsiveness ======================== */
 
 
 @media screen and (max-width: 700px) {
     .iframeContact {
         height: 380px;
-        width: 500px;
     }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 700px) {
     .cUDivSection {
         flex-direction: column-reverse;
         gap: 40px;
     }
+}
+
+@media screen and (max-width: 580px) {
 
     .iframeContact {
         height: 300px;
-        width: 400px;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .iframeContact {
-        width: 300px;
     }
 }

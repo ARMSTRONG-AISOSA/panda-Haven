@@ -16,8 +16,10 @@ const NewsLetter = () => {
         <div className='joinUsForm'>
           <input 
           className='joinUsInput'
-          type="text"
+          type="email"
+          placeholder='Subscribe NewsLetter'
            />
+
           <Button
               className='nLBtn'
               type="submit"
