@@ -1,8 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './contactUs.css';
 import Button from '../../../../components/button/Button';
 
 const ContactUs = () => {
+
+  // State Management
+  const [formData, setFormData] = useState({
+    //name/key : 'value',
+    userName: '',
+    email: '',
+    message: ''
+  });
+
+  // Functions
+  // Handle input changes
+  const handleChange = (e) => {
+    // Each input in the form has a name attribute corresponding to a key in the formData state.
+    const { name, value } = e.target;
+    // Destructuring e.target
+    // e.target: Refers to the specific input element that triggered the event.
+    // e.target.name identifies which input field was changed (name === key).
+    // e.target.value gets the current value of the input field.
+
+
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  // Handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form Data:", formData);
+    // Add form submission logic (e.g., send to an API)
+    alert('Message sent!');
+  };
+
   return (
     <div className='cUDivSection'>
       {/* Left Side: Google Maps Embed */}
@@ -36,8 +70,8 @@ const ContactUs = () => {
               type="text"
               id='name'
               name='name'
-              // value={FormData.name}
-              // onChange={handleChange}
+              value={FormData.userName}
+              onChange={handleChange}
               placeholder='Enter Full Name'
               required
             />
@@ -46,15 +80,15 @@ const ContactUs = () => {
           <div className='formGroup'>
             <label htmlFor="email">Email</label>
             <input
-              type="text"
+              type="email"
               id='email' //used to associate the input with a <label>
               name='email' //atrb defines the key under which the value of this input will be sent when submitting a form.
               // It allows the backend (or form handlers) to identify this specific field.
-              // value={FormData.email}
+              value={FormData.email}
               // Binds the input field's value to the React component's state (formData.name).
               // Ensures that the value displayed in the input is always synchronized with the component's state.
-              // onChange={handleChange}
-              // Tan event handler triggered whenever the user types/changes the input value.
+              onChange={handleChange}
+              // event handler triggered whenever the user types/changes the input value.
               // The handleChange function updates the formData state dynamically with the new value the user enters.
 
               placeholder='Enter Email'
@@ -67,36 +101,38 @@ const ContactUs = () => {
             <textarea
               id='message'
               name='message'
-              // value={FormData.message}
-              // onChange={handleChange}
+              value={FormData.message}
+              onChange={handleChange}
               placeholder='Enter Email'
               required
-            />< textarea />
+            />
           </div>
 
-          {/* <div className='formGroup'>
-            <label htmlFor="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Enter your name"
-              required
-            />
-          </div> */}
 
-          <Button
-            className='cFSendBtn'
-            type="submit"
-            label="Send Message"
-            variant="sec"
-            onClick={() => alert('Donate Btn Clicked')} />
+          <div>
+            <Button
+              className='cFSendBtn'
+              type="submit"
+              label="Send Message"
+              variant="sec"
+            // onClick={handleSubmit}
+            />
+          </div>
         </form>
       </div>
     </div>
   )
 }
 
-export default ContactUs
+export default ContactUs;
+
+
+// Note: Destructuring is a convenient way to extract values from arrays or objects and assign them to variables. It enhances clarity, reduces redundancy, and is widely used in modern JavaScript development.
+
+// Instead of accessing properties via object.property, destructuring pulls out only what you need.
+
+// ex.
+// const name = user.name;
+// const age = user.age;
+// INSTEAD
+// const { name, age } = user;

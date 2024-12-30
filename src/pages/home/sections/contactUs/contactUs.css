@@ -5,7 +5,8 @@
     align-items: center;
     justify-content: center;
     border-top: 1px solid var(--grey2-color);
-    align-items: stretch; /* Ensures children stretch to equal height */
+    align-items: stretch;
+    /* Ensures children stretch to equal height */
 }
 
 .cULeftSide,
@@ -20,7 +21,41 @@
 }
 
 .cURSForm {
-    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.cURSForm > div:last-child {
+    padding-top: 20px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+.formGroup>label {
+    font-weight: bold;
+}
+
+.formGroup input,
+.formGroup textarea {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--grey2-color);
+    border: 1px solid transparent;
+    border-radius: var(--bor-rad);
+    transition: all var(--trans-2);
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+    border: 1px solid var(--grey-color);
+    
+    box-shadow: 0 0 3px rgba(70, 70, 70, 0.5);
 }
 
 .cFSendBtn {
@@ -31,8 +66,8 @@
     width: 100%;
     text-align: left;
     padding-bottom: 40px;
-    background-color: red;
 }
+
 
 
 /* =================== Responsiveness ======================== */
@@ -52,7 +87,7 @@
     }
 
     .iframeContact {
-        height: 300px ;
+        height: 300px;
         width: 400px;
     }
 }
@@ -62,4 +97,3 @@
         width: 300px;
     }
 }
-
