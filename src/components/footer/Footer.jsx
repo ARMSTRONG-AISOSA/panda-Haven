@@ -23,10 +23,13 @@ const Footer = () => {
 
           {/* Icons */}
           <div className='footerIcons'>
-            <a href="https://www.youtube.com/" target='_blank' rel='noopener noreferrer' ><FaYoutube /></a>
-            <a href="https://www.facebook.com/" target='_blank' rel='noopener noreferrer' ><FaFacebookF /></a>
-            <a href="https://www.linkedin.com/" target='_blank' rel='noopener noreferrer'><FaLinkedinIn /></a>
-            <a href="https://www.instagram.com/" target='_blank' rel='noopener noreferrer'><FaInstagram /></a>
+            <a className="iYoutube" href="https://www.youtube.com/" target='_blank' rel='noopener noreferrer' ><FaYoutube /></a>
+
+            <a className="iFacebook" href="https://www.facebook.com/" target='_blank' rel='noopener noreferrer' ><FaFacebookF /></a>
+
+            <a className="iLinkedin" href="https://www.linkedin.com/" target='_blank' rel='noopener noreferrer'><FaLinkedinIn /></a>
+
+            <a className="iInstagram" href="https://www.instagram.com/" target='_blank' rel='noopener noreferrer'><FaInstagram /></a>
           </div>
         </div>
       </div>

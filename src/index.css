@@ -4,6 +4,7 @@
   --pry-color: #ffffff;
   --sec-color: #000000;
   --green-color: #228b22;
+  --green2-color: #115e11;
   --yellow-color: #e6c200;
   --blue-color: #87ceeb;
   --greyDark-color: #575656;
@@ -158,7 +159,8 @@ p {
   border-top: 1px solid var(--grey2-color);
   padding: 2.5rem 0;
 
-  align-items: stretch; /* Ensures children stretch to equal height */
+  align-items: stretch;
+  /* Ensures children stretch to equal height */
 }
 
 .grey3 {

@@ -16,7 +16,6 @@
     padding: 20px 40px 20px 40px;
     align-items: center;
     justify-content: center;
-    border-top: 1px solid var(--grey2-color);
     width: 100%;
     height: auto;
     background-color: var(--greyDark-color);
