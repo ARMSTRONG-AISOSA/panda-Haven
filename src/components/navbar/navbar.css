@@ -14,7 +14,6 @@
 
 .logo {
     width: 40px;
-    cursor: pointer;
 }
 
 .mobileMenuIcons {
@@ -43,6 +42,7 @@
     color: var(--sec-color);
     text-decoration: none;
     transition: var(--trans-1) all;
+    font-size: 1.2rem;
 }
 
 .navlinks a:hover {
@@ -128,6 +128,7 @@
 
 .username {
     cursor: pointer;
+    font-size: 1.2rem;
 }
 
 .profileDd {
@@ -171,21 +172,23 @@
 
 
 
-/* Responsiveness */
-@media screen and (max-width: 768px) {
-    /* Adjust the Navlink */
+/* ======================== Responsiveness ======================== */
+
+@media screen and (max-width: 865px) {
+    .navlinks a {
+        font-size: 1rem;
+    }
+
+    .username {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 665px) {
-    /* Adjust the Navlink */
 
     .mobileMenuIcons {
         display: block;
     }
-
-    /* .navLinksCon {
-        display: none;
-    } */
 
     .navLinksCon {
         position: absolute;

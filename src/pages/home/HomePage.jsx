@@ -39,9 +39,8 @@ const HomePage = () => {
         <ContactUs />
         <Register />
         <NewsLetter />
+        <Footer />
       </div>
-
-      <Footer />
     </div>
   )
 }

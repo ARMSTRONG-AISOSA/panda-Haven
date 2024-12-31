@@ -17,10 +17,12 @@ const Navbar = () => {
     //  Functions
     // Arr. function Toggle Profile Dropdown Visibility
     const toggleProfileDd = () => setProfileDd(!profileDd);
+    
     // Toggle Dropdown
     const toggleDropdown = () => {
         setShowDropDown(!showDropdown)
     };
+
     // Toggle Menu
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
@@ -30,7 +32,9 @@ const Navbar = () => {
         <div className='navbar'>
             {/* Logo */}
             <div className='logoSection'>
-                <img className='logo' src={logo} alt="logo" />
+                <Link to="/">
+                    <img className='logo' src={logo} alt="logo" />
+                </Link>
                 <span className='logoName'>Panda Haven</span>
             </div>
 
