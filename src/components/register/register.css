@@ -1,7 +1,7 @@
 .registerSection {
     display: flex;
     gap: 40px;
-    padding: 40px 0px;
+    padding: 40px 0px 50px 0px;
     align-items: center;
     justify-content: center;
     border-top: 1px solid var(--grey2-color);

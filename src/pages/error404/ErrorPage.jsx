@@ -3,7 +3,7 @@ import './errorPage.css';
 
 const ErrorPage = () => {
   return (
-    <div>
+    <div className='container'>
       <h1>Error Page</h1>
       <p>Page not found.</p>
     </div>
