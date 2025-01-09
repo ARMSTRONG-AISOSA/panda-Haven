@@ -1,0 +1,21 @@
+.joinUsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 0px 20px 0px;
+    background-color: var(--grey2-color);
+}
+
+.joinUsContent {
+    background-color: red;
+}
+
+.joinUsContent h3 {
+    margin-bottom: 30px;
+}
+
+.joinUsRegister {
+    background-color: blue;
+    width: 100%;
+    padding: 40px;
+}

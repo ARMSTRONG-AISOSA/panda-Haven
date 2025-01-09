@@ -5,7 +5,6 @@ import HomePage from "./pages/home/HomePage";
 import AboutUs from "./pages/about/AboutUs";
 import Advocacy from "./pages/advocacy/Advocacy";
 import Blog from "./pages/blog/Blog";
-import ComingSoon from "./pages/comingSoon/ComingSoon";
 import ContactUs from "./pages/contactUs/ContactUs";
 import Donate from "./pages/donate/Donate";
 import EduResources from "./pages/eduResources/EduResources";
@@ -27,7 +26,6 @@ const App = () => {
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/advocacy" element={<Advocacy />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/comingsoon" element={<ComingSoon />} />
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/eduresources" element={<EduResources />} />

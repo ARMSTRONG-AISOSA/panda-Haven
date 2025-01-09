@@ -1,0 +1,30 @@
+.comingSoon {
+    position: relative;
+    height: 85vh;
+    width: 100%;
+    background-image: url('../../assets/images/comingSoonImg.png');
+    background-size: cover;
+    background-position: center;
+    background-color: var(--grey2-color);
+
+    /*  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comingSoon h1 {
+    color: var(--sec-color);
+    text-align: center;
+    font-family: "Roboto", serif;
+    font-weight: 600;
+    font-size: 4.5rem;
+}
+
+/* ================== Responsiveness ================== */
+/* ======== Tablet ======== */
+@media screen and (max-width: 768px) {
+    .comingSoon h1 {
+        font-size: 3rem;
+    }
+}

@@ -71,7 +71,7 @@ const SignUp = () => {
           <div>
             <input
               type="password"
-              placeholder='Enter Your Password'
+              placeholder='Confirm Your Password'
             />
           </div>
 

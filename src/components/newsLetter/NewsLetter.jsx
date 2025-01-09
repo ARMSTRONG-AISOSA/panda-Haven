@@ -14,19 +14,19 @@ const NewsLetter = () => {
         <p className='nLP'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
 
         <div className='joinUsForm'>
-          <input 
-          className='joinUsInput'
-          type="email"
-          placeholder='Subscribe NewsLetter'
-           />
+          <input
+            className='joinUsInput'
+            type="email"
+            placeholder='Subscribe NewsLetter'
+          />
 
           <Button
-              className='nLBtn'
-              type="submit"
-              label="Join Us"
-              variant="sec"
-            // onClick={handleSubmit}
-            />
+            className='nLBtn'
+            type="submit"
+            label="Join Us"
+            variant="sec"
+          // onClick={handleSubmit}
+          />
         </div>
       </div>
     </div>
