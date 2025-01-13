@@ -88,7 +88,7 @@
         border-radius: var(--bor-rad1);
     }
 
-    .joinUsForm {
+    .subscribeForm {
         flex-direction: column;
         gap: 10px;
     }

@@ -1,0 +1,112 @@
+.popUpSection {
+    background-color: rgba(0, 0, 0, 0.637);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: var(--bor-rad1);
+
+
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(19, 182, 4, 0.26);
+    z-index: 1000;
+    width: 80%;
+    height: auto;
+}
+
+.popup-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.popUpIconDiv {
+    height: fit-content;
+}
+
+.pUIcon {
+    font-size: 45px;
+}
+
+.popup-content h3 {
+    line-height: 1;
+}
+
+.subscribeForm {
+    display: flex;
+    align-items: stretch;
+    /* Ensures children stretch to equal height */
+    max-width: 500px;
+    width: 100%;
+    background-color: red;
+}
+
+.subscribeInput {
+    flex: 1;
+    font-size: 0.9rem;
+    padding: 0px 10px;
+    border-radius: var(--bor-rad2) 0px 0px var(--bor-rad2);
+    border: 1px solid var(--grey1-color);
+    background-color: var(--grey3-color);
+    transition: all var(--trans-1);
+}
+
+.subscribeInput::placeholder {
+    font-style: italic;
+}
+
+.subscribeInput:focus {
+    border: 1px solid var(--greyDark-color);
+    box-shadow: 0px 0px 8px var(--sec-color);
+}
+
+.subscribeBtn {
+    border-radius: 0px var(--bor-rad2) var(--bor-rad2) 0px;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+
+.subscribeBtn:hover {
+    background-color: var(--greyDark-color);
+    color: var(--pry-color);
+    border: 1px solid var(--pry-color);
+}
+
+
+/* ===================== Responsiveness ===================== */
+
+@media screen and (max-width: 445px) {
+
+    .subscribeInput {
+        font-size: 1rem;
+        padding: 10px 10px;
+        border-radius: var(--bor-rad1);
+    }
+
+    .joinUsForm {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .subscribeBtn {
+        border-radius: var(--bor-rad1);
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    .popup {
+        max-width: 500px;
+    }
+}

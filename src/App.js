@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 // Pages
 import HomePage from "./pages/home/HomePage";
@@ -14,13 +15,17 @@ import Projects from "./pages/projects/Projects";
 import Shop from "./pages/shop/Shop";
 import SignUp from "./pages/signUp/SignUp";
 import Volunteer from "./pages/volunteer/Volunteer";
+import PopUp from "./components/popUp/PopUp";
 
 import ErrorPage from "./pages/error404/ErrorPage";
 
+
 const App = () => {
+
   return (
     <div>
       <Router basename="/panda-haven">
+        <PopUp />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/aboutus" element={<AboutUs />} />
