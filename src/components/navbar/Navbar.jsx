@@ -28,14 +28,6 @@ const Navbar = () => {
         setMenuOpen(!menuOpen);
     };
 
-    // Fix
-    // Close Menue on Background Click
-    const closeMenu = (e) => {
-        if (e.target.classList.contains('navLinkscon')) {
-            setMenuOpen(false);
-            // setMenuOpen(!menuOpen);
-        }
-    }
 
     return (
         <div className='navbar'>
@@ -57,9 +49,12 @@ const Navbar = () => {
 
             <div
                 className={`navLinksCon slideIn ${menuOpen ? "" : "hide"}`}
-                // Fix
-                onClick={closeMenu}
             >
+                <span 
+                className='menuOverlay'
+                onClick={toggleMenu}
+                ></span>
+
                 <div className='navlinks'>
                     <Link to="/">Home</Link>
                     <Link to="/aboutus">About Us</Link>

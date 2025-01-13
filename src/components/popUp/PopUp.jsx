@@ -1,27 +1,30 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import './popUp.css';
-import { IoIosMailOpen } from 'react-icons/io';
+import { IoMdCloseCircleOutline, IoIosMailOpen } from 'react-icons/io';
 import Button from '../button/Button';
 
 const PopUp = () => {
     const location = useLocation();
-    // const [showPopup, setShowPopup] = useState(false);
-    const [showPopup, setShowPopup] = useState(true);
+    const [showPopup, setShowPopup] = useState(false);
 
+    // useEffect hook is used to set up an interval to show the pop-up at regular intervals and cleans up after itself.
+    useEffect(() => {
+        const excludedPaths = ["/login", "/signup"];
 
-    // useEffect(() => {
-    //     const excludedPaths = ["/login", "/signup"];
-    //     const interval = setInterval(() => {
-    //         if (!excludedPaths.includes(location.pathname)) {
-    //             setShowPopup(true);
-    //             setTimeout(() => setShowPopup(false), 5000); // Show popup for 5 seconds
-    //         }
-    //     }, 12000); // 1 minute interval
+        const interval = setInterval(() => {
+            // If the current path is not in the excluded list, the pop-up is shown (true).
+            // If the current path is not in the excluded list, the pop-up is shown (true).
+            if (!excludedPaths.includes(location.pathname)) {
+                setShowPopup(true);
+            }
 
-    //     return () => clearInterval(interval); // Cleanup interval on component unmount
-    // }, [location]);
+        }, 400000); // 4 min interval
 
+        return () => clearInterval(interval);
+    }, [location]
+        // [location]:This array tells React to re-run the useEffect block whenever the location object changes (i.e user navigates to a different route).
+    )
 
     const closePopup = () => {
         setShowPopup(false);
@@ -29,14 +32,25 @@ const PopUp = () => {
 
     return (
         showPopup && (
-            <div className='popUpSection'>
+            <div 
+            className='popUpSection'
+            onClick={closePopup}
+            >
                 <div className="popup">
                     <div className="popup-content">
-                        <div className='popUpIconDiv'>
-                            <IoIosMailOpen className='pUIcon' />
+
+                        <div className='closeIconDiv'>
+                            <IoMdCloseCircleOutline
+                                className='popUpCloseIcon'
+                                onClick={closePopup}
+                            />
                         </div>
 
-                        <h3 className=''>Subscribe Newsletter</h3>
+                        <div className='popUpIconDiv'>
+                            <IoIosMailOpen className='pUIcon' />
+
+                            <h3 className=''>Subscribe Newsletter</h3>
+                        </div>
 
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
                         {/* <p>Current Location: {location.pathname}</p> */}

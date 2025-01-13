@@ -193,6 +193,13 @@
     }
 }
 
+@media screen and (min-width: 665px) {
+    
+    .menuOverlay {
+        display: none;
+    }
+ }
+
 @media screen and (max-width: 665px) {
 
     .mobileMenuIcons {
@@ -223,6 +230,12 @@
 
     .navLinksCon.hide {
         display: none;
+    }
+
+    .menuOverlay {
+        background-color: transparent;
+        height: 100%;
+        width: 100%;
     }
 
     .navlinks {

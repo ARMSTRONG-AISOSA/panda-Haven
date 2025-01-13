@@ -17,17 +17,27 @@
 
 
     padding: 20px;
+    padding-top: 35px;
     box-shadow: 0 4px 8px rgba(19, 182, 4, 0.26);
     z-index: 1000;
     width: 80%;
     height: auto;
 }
 
+.closeIconDiv {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
 .popup-content {
     text-align: center;
     display: flex;
+    align-items: center;
     flex-direction: column;
-    gap: 8px;
+    gap: 20px;
 }
 
 .popUpIconDiv {
@@ -36,6 +46,7 @@
 
 .pUIcon {
     font-size: 45px;
+    padding-bottom: 8px;
 }
 
 .popup-content h3 {
@@ -46,16 +57,15 @@
     display: flex;
     align-items: stretch;
     /* Ensures children stretch to equal height */
-    max-width: 500px;
+    max-width: 400px;
     width: 100%;
-    background-color: red;
 }
 
 .subscribeInput {
     flex: 1;
     font-size: 0.9rem;
     padding: 0px 10px;
-    border-radius: var(--bor-rad2) 0px 0px var(--bor-rad2);
+    border-radius: var(--bor-rad1) 0px 0px var(--bor-rad1);
     border: 1px solid var(--grey1-color);
     background-color: var(--grey3-color);
     transition: all var(--trans-1);
@@ -71,7 +81,7 @@
 }
 
 .subscribeBtn {
-    border-radius: 0px var(--bor-rad2) var(--bor-rad2) 0px;
+    border-radius: 0px var(--bor-rad1) var(--bor-rad1) 0px;
     font-weight: 500;
     font-size: 1.05rem;
 }
