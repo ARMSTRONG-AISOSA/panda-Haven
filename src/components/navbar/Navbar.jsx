@@ -50,9 +50,9 @@ const Navbar = () => {
             <div
                 className={`navLinksCon slideIn ${menuOpen ? "" : "hide"}`}
             >
-                <span 
-                className='menuOverlay'
-                onClick={toggleMenu}
+                <span
+                    className='menuOverlay'
+                    onClick={toggleMenu}
                 ></span>
 
                 <div className='navlinks'>

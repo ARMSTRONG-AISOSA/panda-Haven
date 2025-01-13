@@ -3,19 +3,95 @@
     flex-direction: column;
     gap: 40px;
     padding: 40px 0px 20px 0px;
-    background-color: var(--grey2-color);
 }
 
-.joinUsContent {
-    background-color: red;
-}
+.joinUsContent {}
 
 .joinUsContent h3 {
     margin-bottom: 30px;
 }
 
 .joinUsRegister {
-    background-color: blue;
+    border-radius: var(--bor-rad);
+    background-color: var(--greyLight-color);
     width: 100%;
-    padding: 40px;
+    padding: 40px 60px;
+}
+
+.jUForm {
+    display: flex;
+    flex-direction: column;
+    /* background-color: brown; */
+    gap: 1rem;
+    width: 90%;
+}
+
+.jUFTitle {
+    padding-bottom: 1rem;
+}
+
+.jUFTitle h3 {
+    margin-bottom: 1.7rem;
+}
+
+.jFormGroups {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-bottom: 15px;
+}
+
+.jFormGroups label {
+    display: block;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.jFormGroups input[type="text"],
+.jFormGroups input[type="email"],
+.jFormGroups input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--grey-color);
+    border-radius: var(--bor-rad);
+    font-size: 1rem;
+    font-style: italic;
+    background-color: var(--pry-color);
+}
+
+.jFormGroups input[type="file"] {
+    padding: 7px;
+}
+
+.jFormGroups input:focus {
+    border: 1px solid var(--greyDark-color);
+    box-shadow: 0 0 3px rgba(70, 70, 70, 0.5);
+}
+
+
+/* =================== Responsiveness ======================== */
+
+@media screen and (max-width: 900px) {
+
+    .jUForm {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .joinUsRegister {
+        padding: 40px 40px;
+    }
+
+    .jFormGroups label {
+        font-size: 0.9rem;
+    }
+
+    .jFormGroups input[type="text"],
+    .jFormGroups input[type="email"],
+    .jFormGroups input[type="file"] {
+        font-size: 0.85rem;
+    }
 }
